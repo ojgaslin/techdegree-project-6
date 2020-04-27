@@ -1,0 +1,42 @@
+   'Projects': [
+     {'id': 0,
+     'project_name': 'random_quote_generator',
+     'description': 'click button to see quote',
+     'technologies': ['basic JavaScript syntax', 'variables', 'loops', 'conditionals', 'object literals'],
+     'live_link': '',
+     'github_link': '',
+     'image_urls': ''
+     },
+     {'id': 1,
+     'project_name': 'list_pagination_and_filtering',
+     'description': 'organize and display student names ten at a time',
+     'technologies': ['javascript', 'pagination'],
+     'live_link': '',
+     'github_link': '',
+     'image_urls': ''
+     },
+     {'id': 2,
+     'project_name': 'interative_conference_form',
+     'description': 'interative registration for a fictional conference',
+     'technologies': ['jQuery', 'validating input', 'error messages'],
+     'live_link': '',
+     'github_link': '',
+     'image_urls': ''
+     },
+     {'id': 3,
+     'project_name': 'phrase_hunter',
+     'description': 'guess letters to find the phrase',
+     'technologies': ['javascript', 'object oriented programming'],
+     'live_link': '',
+     'github_link': '',
+     'image_urls': ''
+     },
+     {'id': 4,
+     'project_name': 'random_user_generator',
+     'description': 'sharing contact information between remote employees of fictional company',
+     'technologies': ['javascript', 'jQuery', 'JSON', 'APIs'],
+     'live_link': '',
+     'github_link': '',
+     'image_urls': ''
+     },
+   ]
