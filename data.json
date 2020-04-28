@@ -3,40 +3,45 @@
      'project_name': 'random_quote_generator',
      'description': 'click button to see quote',
      'technologies': ['basic JavaScript syntax', 'variables', 'loops', 'conditionals', 'object literals'],
-     'live_link': '',
-     'github_link': '',
-     'image_urls': ''
+     'live_link': 'https://ojgaslin.github.io/techdegree-project-1/',
+     'github_link': 'https://github.com/ojgaslin/techdegree-project-1',
+     'image_urls': ['../../Images/techdegree project 1 b.png', '../../Images/techdegree project 1.png', '../../Images/techdegree project 1',
+     '../../Images/techdegree project 1 c.png', '../../Images/techdegree project 1 d.png']
      },
      {'id': 1,
      'project_name': 'list_pagination_and_filtering',
      'description': 'organize and display student names ten at a time',
      'technologies': ['javascript', 'pagination'],
-     'live_link': '',
-     'github_link': '',
-     'image_urls': ''
+     'live_link': 'https://ojgaslin.github.io/techdegree-project-2/',
+     'github_link': 'https://github.com/ojgaslin/techdegree-project-2',
+     'image_urls': ['../../Images/techdegree project 2 c.png', '../../Images/techdegree project 2.png', '../../Images/techdegree project 2 b.png',
+     '../../Images/techdegree project 2 d.png']
      },
      {'id': 2,
      'project_name': 'interative_conference_form',
      'description': 'interative registration for a fictional conference',
      'technologies': ['jQuery', 'validating input', 'error messages'],
-     'live_link': '',
-     'github_link': '',
-     'image_urls': ''
+     'live_link': 'https://ojgaslin.github.io/techdegree-project-3/',
+     'github_link': 'https://github.com/ojgaslin/techdegree-project-3',
+     'image_urls': ['../../Images/techdegree project 3 c.png', '../../Images/techdegree project 3.png', '../../Images/techdegree project 3 b.png',
+     '../../Images/techdegree project 3 d.png', '../../Images/techdegree project 3 e.png']
      },
      {'id': 3,
      'project_name': 'phrase_hunter',
      'description': 'guess letters to find the phrase',
      'technologies': ['javascript', 'object oriented programming'],
-     'live_link': '',
-     'github_link': '',
-     'image_urls': ''
+     'live_link': 'https://ojgaslin.github.io/techdegree-project-4/',
+     'github_link': 'https://github.com/ojgaslin/techdegree-project-4',
+     'image_urls': ['../../Images/techdegree project 4 b.png', '../../Images/techdegree project 4 c.png', '../../Images/techdegree project 4 d.png',
+     '../../Images/techdegree project 4 e.png', '../../Images/techdegree project 4 f.png']
      },
      {'id': 4,
      'project_name': 'random_user_generator',
      'description': 'sharing contact information between remote employees of fictional company',
      'technologies': ['javascript', 'jQuery', 'JSON', 'APIs'],
-     'live_link': '',
-     'github_link': '',
-     'image_urls': ''
+     'live_link': 'https://ojgaslin.github.io/techdegree-project-5/',
+     'github_link': 'https://github.com/ojgaslin/techdegree-project-5',
+     'image_urls': ['../../Images/techdegree project 5 b.png', '../../Images/techdegree project 5.png', '../../Images/techdegree project 5 d.png',
+     '../../Images/techdegree project 5 e.png', '../../Images/techdegree project 5 f.png', '../../Images/techdegree project 5 g.png']
      },
    ]
