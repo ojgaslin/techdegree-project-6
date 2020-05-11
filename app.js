@@ -1,24 +1,41 @@
 const express = require('express');
-const app = express.Router();
+const projects = require('./data.json');
+//Init app
+const app = express();
 const path = require('path');
 
 
-
+//load view engine
 app.set('view engine', 'pug');
-
-const { projects } = require('data.json');
-
 app.use(express.static('public'));
 
+// app.use((req, res, next) => {
+//   const err = new Error('Not Found');
+//   err.status = 404;
+//   next(err);
+// })
+
+// app.use((err, req, res, next) => {
+// res.locals.error = err;
+// res.status(err.status);
+// res.render('error');
+// });
+
+//index page route
 app.get('/index', (req, res, next) => {
  res.render('index', { projects });
  res.locals = data.projects;
- res.render('Home');
+
 });
 
+//about page route
 app.get('/about', (req, res) => {
- response.send('test');
+ //response.send('test');
  res.render('about');
+});
+
+app.get('/test', (req, res) =>{
+  res.json(projects[0]);
 });
 
 app.get('/projects/:id', function(req, res, next) {
@@ -31,6 +48,7 @@ app.get('/projects/:id', function(req, res, next) {
    }
 })
 
+//start server
 app.listen(3000, () => {
   console.log('App is listening to port 3000')
 });

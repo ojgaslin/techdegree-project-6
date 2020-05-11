@@ -1,0 +1,55 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/index') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
+
+        //- Add your name.
+        h1 Olivia Gaslin
+
+        //- Feel free personalize the title below
+        p.lead.text-light
+          | Full Stack JavaScript Developer.
+
+        //- Replace the boilerplate below with your Elevator pitch below.
+        .portfolio-bio
+          p
+            | The techdegree program by Treehouse covers both client side and server side development, each unit has a different focus and project.
+            | My previous experience in the sciences has curated my critical thinking skills. A majority of scientific questions involve processing many concepts and piecing them together for a solution to a unique situation.
+            | Solving these problems also involves a great amount of organization and planning, because on the path to a solution there are multiple steps that need to be taken that may not give you a direct answer, but something to get you closer to realizing the answer.
+            | Pertaining to my personal approach to problems, I am a detail-oriented person but I also understand the importance of considering the bigger picture
+            | I like to think about possible future problems so I can try to stop them coming to fruition, and if I can't avoid a problem I can at least prepare and perhaps mitigate it.
+            | I believe I have potential to become a great developer because I am motivated and eager to solve problems and make existing code better.
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6 Skills
+
+        //- Replace the text in the li tags below with your own skills.  At this point, you should be able to list at least ten skills.
+        ul
+          li Express
+          li CSS
+          li HTML
+          li Javascript loops, arrays, and objects
+          li Javascript list pagination and filtering 
+          li ES2015 basics
+          li jQuery basics
+          li Object-oriented JavaScript
+          li AJAX basics
+          li Asynchronous programming
+          li Fetch API basics
+        h6 Contact Info
+
+        //- Add your own contact info
+        ul
+          li 812-228-9860
+          li olivia.gaslin@gmail.com
+
+        //- Add URLs to the hrefs below to link to your social media accounts.
+        a.button.expanded(href='https://www.linkedin.com/in/olivia-gaslin-6b55b9140/') LinkedIn
+        a.button.expanded(href='https://github.com/ojgaslin') GitHub
+
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/index.pug') ← Back
+  
