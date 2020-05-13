@@ -1,14 +1,43 @@
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Concert+One&display=swap');
+h1,h2,h3,h4{
+  font-family: 'Yeseva One', cursive;
   color: #180D01;
+  text-shadow: 2px 2px 5px grey;
 }
 
-  h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  div.cell.auto{
+    font-family: 'Bellota Text', cursive;
+    font-size: 16px;
+  }
+
+  p.lead.text-light{
+    font-weight:400;
+    font-size: 25px;
+    font-family: 'Concert One', cursive;
+    text-shadow: 2px 2px 5px grey;
+  }
+
+
+  h5.my_name{
+    font-family: 'Yeseva One', cursive;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px orange;
+  }
+
+  h5.project_name{
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+  }
+  #my-info > div > div.cell.auto > a{
+    color: #FFFFFF;
+    font-family: 'Yeseva One', cursive;
   }
 
   h6{
@@ -16,12 +45,14 @@ h1,h2,h3,h4,h5,p{
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: 'Yeseva One', cursive;
   }
 
   p{
     font-size: 15px;
     color: #180D01;
     font-weight: 600;
+    text-shadow: 2px 2px 5px white;
   }
 
 .round{
@@ -30,11 +61,13 @@ h1,h2,h3,h4,h5,p{
 
 .text-light{
   color: #180D01;
+  text-shadow: 2px 2px 5px grey;
 }
 
 .button{
   background-color: #180D01;
   width: 100%;
+  font-family: 'Concert One', cursive;
 }
 
 .button:hover{
@@ -62,17 +95,20 @@ a:hover{
 .portfolio-me{
   padding: 20px;
   background: #121213;
-  color: #FF9933;
+  color: #FFFFFF;
   box-shadow: none !important;
+  text-align: center;
 }
 
   .portfolio-me p{
+    font-family: 'Lora', serif;
     font-size: 14px;
     color: #180D01;
   }
 
+
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 600;
     color: #180D01;
     font-size: 13px;
@@ -85,6 +121,9 @@ a:hover{
     color: #180D01;
   }
 
+a.my_name{
+  text-shadow: 2px 2px 5px orange;
+}
 .portfolio-breadcrumb{
   margin: 0;
   padding: 20px;
@@ -92,7 +131,7 @@ a:hover{
 }
 
  .portfolio-breadcrumb a{
-   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-family: 'Lora', serif;
    font-weight: 600;
    font-size: 13px;
    letter-spacing: 2.5px;
@@ -112,7 +151,7 @@ a:hover{
 
 .portfolio-index{
   margin: 0;
-  padding: 10px 50px;
+
 }
 
   .portfolio-index .thumbnail{
@@ -137,8 +176,9 @@ a:hover{
 
 body > div.off-canvas-content.has-reveal-left{
     background-image: url("../../Images/background.jpg");
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: right;
+    overflow: scroll;
 }
 
 #my-info{
@@ -150,6 +190,10 @@ body > div.off-canvas-content.has-reveal-left{
 
 .portfolio-project p{
   border: none;
+  font-family: 'Concert One', cursive;
+  font-size: 25px;
+  font-weight: 400;
+  color: #180D01;
 }
 
 .portfolio-project li{
@@ -162,4 +206,122 @@ body > div.off-canvas-content.has-reveal-left{
 }
 li.techno{
   color: #180D01;
+  font-family: 'Concert One', cursive;
+  text-shadow: 2px 2px 5px white;
+}
+
+
+img.sample_picture{
+  image-rendering: -moz-crisp-edges;
+  image-rendering:   -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  max-height: 330px;
+  min-height: 330px;
+
+  min-width: 380px;
+  padding: 0px;
+}
+
+body > div.off-canvas-content.has-reveal-left > article, body > div.off-canvas-content.has-reveal-left > nav{
+  max-width: 100%;
+}
+
+img.project_pic{
+  position: relative;
+  left: 2.7px;
+  width: 3000px;
+  height: auto;
+  image-rendering: -moz-crisp-edges;
+  image-rendering:   -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+img.sample_picture.thumbnail{
+  padding: 0;
+
+}
+
+body > div.off-canvas-content.has-reveal-left > article > div > article, body > div.off-canvas-content.has-reveal-left > article > div > article{
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+
+
+li.skill{
+  color: #180D01;
+  font-family: 'Concert One', cursive;
+  font-weight: light;
+  text-shadow: 2px 2px 5px white;
+}
+
+/***neon title css from https://codepen.io/Trinca/pen/NAvpWa**/
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.myPortfolioContainer {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.my {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 5vw;
+  line-height: 5vw;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.portfolio {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 5vw;
+  line-height: 5vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+
+.my {
+  animation: my 1s ease infinite;
+  -moz-animation: my 1s ease infinite;
+  -webkit-animation: my 1s ease infinite;
+}
+
+@keyframes my {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.portfolio {
+  animation: portfolio 2s linear infinite;
+  -moz-animation: portfolio 2s linear infinite;
+  -webkit-animation: portfolio 2s linear infinite;
+  -o-animation: portfolio 2s linear infinite;
+}
+
+@keyframes portfolio {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
 }

@@ -3,24 +3,25 @@ extends layout.pug
 block content
   article.grid-container.portfolio-intro
     link(rel='stylesheet', href='/css/style.css')
-    div
+    div(class= 'myPortfolioContainer')
       //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together!
-      h1 My Portfolio
+      h1(class= 'my') My 
+      h1(class='portfolio') Portfolio
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc.
       p.lead.text-light
-        |  This is my index of projects, each one required different skills to complete. The technologies used in these projects were also
-        | built on one another and allowed the creation of increasingly more complex projects. This website
-        | holds the previous projects and makes it easy to look at them and navigate between them.
+        | &nbsp;&nbsp;&nbsp;&nbsp;This page is my index of projects, each requiring different skills to complete. The technologies used in these projects were
+        | built on one another and this allowed the creation of increasingly more complex projects. The purpose of this website
+        | is to hold the previous projects, present their links for easy access, and provide an all-around pleasurable user experience.
       article.grid-container.portfolio-index
-                  .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
-                              //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.
-      each project in projects
-        //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href,as well as the img's src and the projects title.
-        div
-            a(href =`/projects/${project.id}`)
-              h4= project.project_name
-              img.thumbnail(src=`${project.image_urls[0]}` width='550' height='550')
+        .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+           //- Use the Pug `each` iterator to create a project img, title and link in the markup for each of the projects you are showcasing.
+           each project in projects
+            .cell
+             //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href,as well as the img's src and the projects title.
+             a(href =`/projects/${project.id}`)
+              img(class= 'sample_picture').thumbnail(src=`${project.image_urls[0]}` width='550' height='550')
+              h5(class= 'project_name')= project.project_name
       //- Here's what the Pug for each project example should look like.
 
       //-.cell

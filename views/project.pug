@@ -26,9 +26,9 @@ block content
           br
           a.button(class='link_url' href=`${project.github_link}`) GitHub Repo
 
-    each url, index in project.image_urls
-        if index > 0 
-          img(src=`${project.image_urls[index]}` width='1200' height='550')
+        each url, index in project.image_urls
+          if index > 0 
+            img.thumbnail(class= 'project_pic' src=`${project.image_urls[index]}` width='1200' height='550')
         //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
 
 

@@ -37,7 +37,7 @@
      },
      {"id": 4,
      "project_name": "A RANDOM USER GENERATOR",
-     "description": "This application shares contact information between remote employees of a fictional company, click on an employee card to open the modal window where there are previous and next buttons to navigate through employees.",
+     "description": "This application shares contact information between remote employees of a fictional company, click on an employee card to open the modal window where the 'previous' and 'next' buttons help you navigate through employees.",
      "technologies": ["javascript", "jQuery", "JSON", "APIs"],
      "live_link": "https://ojgaslin.github.io/techdegree-project-5/",
      "github_link": "https://github.com/ojgaslin/techdegree-project-5",

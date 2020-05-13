@@ -21,7 +21,7 @@
      *    IE on Windows Phone and in iOS.
      */
 html {
-  font-family: sans-serif;
+  font-family: 'Lora', serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */
@@ -95,7 +95,7 @@ main {
      * 2. Correct the odd `em` font sizing in all browsers.
      */
 pre {
-  font-family: monospace, monospace;
+  font-family: 'Lora', sarif;
   /* 1 */
   font-size: 1em;
   /* 2 */ }

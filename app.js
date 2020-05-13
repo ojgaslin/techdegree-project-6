@@ -1,13 +1,28 @@
 const express = require('express');
 const projects = require('./data.json');
+const path = require('path');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 //Init app
 const app = express();
-const path = require('path');
 
-
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(cookieParser());
+app.use(express.static('public'));
 //load view engine
 app.set('view engine', 'pug');
-app.use(express.static('public'));
+
+app.use((req, res, next) => {
+  console.log("Hello");
+  const err = new Error();
+  err.status= 500;
+  next(err);
+});
+
+app.use((req, res, next) => {
+   console.log('world');
+   next();
+})
 
 // app.use((req, res, next) => {
 //   const err = new Error('Not Found');
@@ -48,6 +63,17 @@ app.get('/projects/:id', function(req, res, next) {
    }
 })
 
+app.use((req, res, next) => {
+  const err = new Error('Not Found');
+  err.status = 404;
+  next(err);
+});
+
+app.use((err,req, res, next) => {
+   res.locals.error = err;
+   res.status(err.status);
+   res.render('error');
+});
 //start server
 app.listen(3000, () => {
   console.log('App is listening to port 3000')

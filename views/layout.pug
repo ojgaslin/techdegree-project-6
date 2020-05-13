@@ -6,7 +6,7 @@ html(class="no-js" lang="en" dir="ltr")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Lora&family=Yeseva+One&display=swap', rel='stylesheet')
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
   body
@@ -15,31 +15,31 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src= '../../Images/profilepic.46.47 PM.png')
+           img.thumbnail(src= '../../Images/profilepic.46.47 PM.png')
           .cell.auto
 
             //- Add your name here.
-            h5 Olivia Gaslin
+            h5(class= 'my_name') Olivia Gaslin
 
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
+              //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
             | Hello, my name is Olivia, and I am a beginner javascript full stack developer.
             | I graduated from Indiana University in Bloomington Indiana. My focus here was the
             | biological and chemical sciences, but after graduating I decided to pursue web development with the Treehouse techdegree.
             | With this degree I am learning client side and server side development, each unit has a different focus and project.
-            | 
+            br
+            a(class= 'my_name' href='/about') Learn More → 
 
-
-            //- Add about page route to the href below. 
-            a(href='/about') Learn More → 
+    //- Add about page route to the href below. 
+    //-
 
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
-          button.menu-icon(type='button', data-toggle='my-info')
+               button.menu-icon(type='button', data-toggle='my-info')
 
-          //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Olivia Gaslin
+               //- Add your name here.  This is for the mobile screen sized version.
+               span.title-bar-title Olivia Gaslin
       block content
         
 
