@@ -22,9 +22,9 @@ block content
           ul
             each technology in project.technologies
               li(class= 'techno')= technology
-          a.button(class='link_url' href=`${project.live_link}`) Live Demo
+          a.button(target="_blank" class='link_url' href=`${project.live_link}`) Live Demo
           br
-          a.button(class='link_url' href=`${project.github_link}`) GitHub Repo
+          a.button(target="_blank" class='link_url' href=`${project.github_link}`) GitHub Repo
 
         each url, index in project.image_urls
           if index > 0 
