@@ -12,12 +12,7 @@ app.use(express.static('public'));
 //load view engine
 app.set('view engine', 'pug');
 
-// app.use((req, res, next) => {
-//   console.log("Hello");
-//   const err = new Error();
-//   err.status= 500;
-//   next(err);
-// });
+
 
 app.use((req, res, next) => {
    next();
@@ -36,9 +31,9 @@ app.get('/about', (req, res) => {
  res.render('about');
 });
 
-app.get('/test', (req, res) =>{
-  res.json(projects[0]);
-});
+// app.get('/test', (req, res) =>{
+//   res.json(projects[0]);
+// });
 
 app.get('/projects/:id', function(req, res, next) {
    const projectId = req.params.id;
@@ -49,6 +44,11 @@ app.get('/projects/:id', function(req, res, next) {
      res.sendStatus(404);
    }
 })
+// app.use((req, res, next) => {
+//   const err = new Error('Something unexpected went wrong.');
+//   err.status= 500;
+//   next(err);
+// });
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -59,7 +59,11 @@ app.use((req, res, next) => {
 app.use((err,req, res, next) => {
    res.locals.error = err;
    res.status(err.status);
-   res.render('error');
+   res.render('error', err);
+});
+
+app.use(function (err, req, res, next) {
+  res.status(err.status || 500).json({status: err.status, message: err.message})
 });
 //start server
 app.listen(3000, () => {
