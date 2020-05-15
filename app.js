@@ -13,11 +13,6 @@ app.use(express.static('public'));
 app.set('view engine', 'pug');
 
 
-
-app.use((req, res, next) => {
-   next();
-})
-
 //index page route
 app.get('/index', (req, res, next) => {
  res.render('index', { projects });
@@ -31,9 +26,6 @@ app.get('/about', (req, res) => {
  res.render('about');
 });
 
-// app.get('/test', (req, res) =>{
-//   res.json(projects[0]);
-// });
 
 app.get('/projects/:id', function(req, res, next) {
    const projectId = req.params.id;
@@ -41,14 +33,9 @@ app.get('/projects/:id', function(req, res, next) {
    if (project) {
    res.render('project', { project });
    } else {
-     res.sendStatus(404);
+     next();
    }
 })
-// app.use((req, res, next) => {
-//   const err = new Error('Something unexpected went wrong.');
-//   err.status= 500;
-//   next(err);
-// });
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -62,9 +49,6 @@ app.use((err,req, res, next) => {
    res.render('error', err);
 });
 
-app.use(function (err, req, res, next) {
-  res.status(err.status || 500).json({status: err.status, message: err.message})
-});
 //start server
 app.listen(3000, () => {
   console.log('App is listening to port 3000')

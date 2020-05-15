@@ -20,6 +20,6 @@ block content
             .cell
              
              a(href =`/projects/${project.id}`)
-              img(class= 'sample_picture').thumbnail(src=`${project.image_urls[0]}` width='550' height='550')
+              img.thumbnail(class= 'sample_picture', src=`${project.image_urls[0]}`, width='550', height='550')
               h5(class= 'project_name')= project.project_name
       
