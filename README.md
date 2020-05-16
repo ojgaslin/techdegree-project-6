@@ -15,3 +15,4 @@ image-rendering: crisp-edges;
 8) changed background image in style.css line 178 for index and project page to NASA image sourced from https://www.flickr.com/photos/nasacommons/47462090512/
 9) Project titles in index were given font 'Lora', serif; color changed to white, and a black text shadow applied for easy visibility on the background image
 10) Project page title also changed to 'Lora', serif; font family
+11) gif added for error 404 in error.pug, gif from https://giphy.com/gifs/cartoonhangover-cartoon-hangover-bravest-warriors-3ow08MIZlvenNtsXGz
