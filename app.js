@@ -12,7 +12,12 @@ app.use(express.static('public'));
 //load view engine
 app.set('view engine', 'pug');
 
+//home route
+app.get('/', (req, res, next) => {
+  res.render('index', { projects });
+  locals = data.projects;
 
+});
 //index page route
 app.get('/index', (req, res, next) => {
  res.render('index', { projects });
@@ -23,7 +28,7 @@ app.get('/index', (req, res, next) => {
 //about page route
 app.get('/about', (req, res) => {
  //response.send('test');
- res.render('about');
+ res.render('about', { projects });
 });
 
 
